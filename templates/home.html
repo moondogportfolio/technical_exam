@@ -1,0 +1,67 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+
+<img src="static/Assets/carousel.jpg" alt="" style="max-width: fit-content" />
+
+<div class="row info-box">
+  <div class="col-8 info-left">
+    <div class="pic-nav flex">
+      <img src="static/Assets/healtcare.jpg" alt="" class="cursor-pointer" />
+      <img src="static/Assets/general-1.jpg" alt="" class="cursor-pointer" />
+      <img src="static/Assets/retail.jpg" alt="" class="cursor-pointer" />
+    </div>
+    <div>Welcome to <span class="themed-text">Kelly Wood Builder.</span></div>
+    <hr class="separator" />
+    <div class="identity">
+      Kelly Wood Builder is a General Contractor founded in Amarillo, Texas and
+      now with offices in McKinney, Texas. We operate throughout the Midwest
+      region. Started in 1977, we have come to specialize in healthcare and
+      retail construction, but remain very active in all types of projects. Our
+      alliances with multiple architectural firms have paved the way to success
+      in Design/Build, Construction Management, and Fast Track construction.
+    </div>
+    <span class="themed-text cursor-pointer float-right"
+      >read more about us &#9658;
+    </span>
+  </div>
+  <div class="info-right col-4 contact-form flex-column">
+    <div
+      class="flex"
+      style="align-items: center; gap: 5px; margin-bottom: 10px"
+    >
+      <img src="static/Assets/person.jpg" alt="" height="25px" />
+      <span class="themed-text" style="font-size: 1.5em">Contact Form</span>
+    </div>
+    <form
+      action="/submit"
+      method="post"
+      id="loginForm"
+      class="flex-column flex-auto form-container"
+    >
+      <input required type="text" id="name" name="name" placeholder="Name:" />
+      <input
+        required
+        type="text"
+        id="email"
+        name="email"
+        placeholder="Email:"
+      />
+      <textarea
+        required
+        id="msg"
+        name="message"
+        placeholder="Message:"
+        class="message-area"
+      ></textarea>
+      <!-- <button class="nav-button" onclick="submitForm()">SEND &#9658;</button> -->
+      <input type="submit" value="SEND &#9658;" class="cursor-pointer nav-button send-button" />
+    </form>
+  </div>
+</div>
+{% endblock %} {% block scripts %}
+<script>
+  let elements = document.getElementsByClassName("home");
+  elements[0].classList.add("nav-button-active");
+  elements[1].classList.add("text-bold");
+</script>
+{% endblock %}

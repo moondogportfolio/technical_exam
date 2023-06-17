@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="icon" type="image/x-icon" href="static/Assets/hearts.png">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="static/css/single_styles.css" type="text/css"/>
+    <link rel="stylesheet" href="static/css/styles.css" type="text/css"/>
+    <link rel="stylesheet" href="static/css/locations.css" type="text/css"/>
+    <link rel="stylesheet" href="static/css/sizes.css" type="text/css"/>
+  </head>
+  <body>
+    <div class="content">
+      <div class="main-content flex-column">
+        <div class="row header">
+          <div class="col-3 logo">
+            <img src="static/Assets/logo.jpg" alt="" />
+          </div>
+          <div class="navigation col-9 flex-column">
+            <div class="flex details">
+              <div>
+                <img
+                  src="static/Assets/home.jpg"
+                  class="icon"
+                  alt=""
+                  style="height: 1em"
+                />
+              </div>
+              <div>616 5. Jackson Amarillo, TX 79101</div>
+              <hr class="separator separator-vertical" />
+              <div>
+                <img
+                  src="static/Assets/email.jpg"
+                  class="icon"
+                  alt=""
+                  style="height: 1em"
+                />
+              </div>
+              <div>info@kellywood.com</div>
+              <hr class="separator separator-vertical" />
+              <div>
+                <img
+                  src="static/Assets/contact.jpg"
+                  class="icon"
+                  alt=""
+                  style="height: 1em"
+                />
+              </div>
+              <div>806.379.9696</div>
+            </div>
+            <div class="flex" style="flex-grow: 2"></div>
+            <div class="flex nav-buttons">
+              <button class="nav-button home">
+                <span><a href="/"> Home</a></span>
+              </button>
+              <button class="nav-button about">
+                <span><a href="/about">  About Us</a></span>
+              </button>
+              <button class="nav-button services">
+                <span><a href="/services"> Services</a></span>
+              </button>
+              <button class="nav-button employment">
+                <span><a href="/employment"> Employment</a></span>
+              </button>
+              <button class="nav-button contact">
+                <span><a href="/contact"> Contact Us</a></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        {% block content %}{% endblock %}
+      </div>
+      <div style="margin: 20px">
+        <div class="col-7 nav-list">
+          <ul class="flex">
+            <li class="items home">Home</li>
+            <li class="items about">About Us</li>
+            <li class="items services">Services</li>
+            <li class="items employment">Employment</li>
+            <li class="items contact">Contact Us</li>
+          </ul>
+        </div>
+        <div class="col-5 designer">
+          Dallas Website Design by Dallas Marketing Company Red Spot Design
+        </div>
+        <div class="col-12 rights">
+          Copyright&#169; 2013.Kelly Wood Builder. All Rights Reserved
+        </div>
+      </div>
+    </div>
+
+    {% block scripts %}
+    {% endblock %}
+    <script src="static/js/movement.js"></script>
+  </body>
+</html>

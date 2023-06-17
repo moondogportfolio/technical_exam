@@ -1,0 +1,198 @@
+.icon {
+  height: 1em;
+  margin-right: 8px;
+}
+
+input,
+textarea {
+  background-color: #d7d7d7;
+  border: 1px solid #fbfbfb;
+  padding: 5px;
+  font-family: Arial;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: rgb(8, 190, 17) 0px 1px 3px 0px, rgb(31, 247, 3) 0px 0px 0px 1px;
+  outline: none;
+}
+
+.nav-button {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0) 50%,
+    rgba(0, 0, 0, 0.12) 51%,
+    rgba(0, 0, 0, 0.04)
+  ) !important;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px 6px 0 0;
+  cursor: pointer;
+  background: #000000c5;
+  border: 1px solid black;
+}
+
+.send-button {
+  color: white;
+  background: #7caa1b;
+  border-radius: 6px;
+  border: 1px solid #448300;
+  outline: solid 2px #71ae12;
+  outline-offset: -3px;
+  width: 70px !important;
+  height: 30px;
+  align-self: end;
+}
+
+.form-success {
+  margin: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 8px;
+  animation: fade 2s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.2;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.nav-buttons {
+  gap: 3px;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.navigation {
+  display: flex;
+  font-size: 0.8em;
+  align-items: center;
+  font-weight: bold;
+}
+
+.nav-button-active {
+  background: #7caa1b;
+  border: 1px solid #396e01;
+  outline: solid 2px #71ae12;
+  outline-offset: -3px;
+}
+
+.separator {
+  background: rgba(0, 0, 0, 0.16);
+  border: 0;
+  display: block;
+  height: 1px;
+}
+
+.separator-vertical {
+  width: 1px;
+  height: auto;
+  align-self: stretch;
+  margin: 0 5px 0 5px;
+}
+
+.contact-form {
+  border: 1px solid #fbfbfb;
+}
+
+.info-right {
+  background: #f1f1f1;
+  align-self: auto;
+}
+
+.form-container {
+  gap: 10px;
+}
+
+.themed-text {
+  font-weight: bold;
+  color: var(--main-theme-color);
+}
+
+.pic-nav {
+  margin-bottom: 24px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.info-box {
+  padding: 12px;
+}
+
+.identity {
+  font-size: 0.8em;
+  word-spacing: 4px;
+  line-height: 2em;
+}
+
+body {
+  margin: 0;
+  background-image: url("../Assets/kellywoodbuilder2.fw.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+:root {
+  --main-theme-color: #076324;
+}
+
+.content {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.main-content {
+  background: #f7f7f7;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+ul li {
+  margin-right: 5px;
+  list-style: none;
+  display: inline;
+}
+ul li:after {
+  content: " \2022 ";
+  font-size: "15px";
+}
+ul li:last-child:after {
+  content: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.rights {
+  margin: 10px 0;
+  font-size: 0.8em;
+}
+
+.designer {
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
+
+.message-area {
+  flex: auto;
+}

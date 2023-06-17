@@ -1,0 +1,10 @@
+{% extends "base.html" %} {% block title %}{{titlename}}{% endblock %}{% block
+content %}
+<div style="height: 800px"></div>
+{% endblock %} {% block scripts %}
+<script>
+  let elements = document.getElementsByClassName("{{route}}");
+  elements[0].classList.add("nav-button-active");
+  elements[1].classList.add("text-bold");
+</script>
+{% endblock %}
